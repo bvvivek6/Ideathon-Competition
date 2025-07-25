@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6E1E1E" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#6E1E1E" stop-opacity="0.6"/>
+    </linearGradient>
+    <pattern id="mysuru-pattern" patternUnits="userSpaceOnUse" width="60" height="60">
+      <path d="M30 5 L55 30 L30 55 L5 30 Z" fill="none" stroke="#C9A333" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg-gradient)"/>
+  
+  <!-- Pattern overlay -->
+  <rect width="1200" height="600" fill="url(#mysuru-pattern)" opacity="0.15"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="600" cy="300" r="200" fill="none" stroke="#C9A333" stroke-width="1" opacity="0.2"/>
+  <circle cx="600" cy="300" r="150" fill="none" stroke="#C9A333" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Palace silhouette -->
+  <path d="M300,500 L900,500 L900,400 C850,380 800,420 750,400 C700,380 650,430 600,410 C550,390 500,440 450,420 C400,400 350,450 300,430 Z" fill="#000" opacity="0.3"/>
+  
+  <!-- Main palace tower -->
+  <path d="M550,400 L650,400 L650,300 L600,250 L550,300 Z" fill="#000" opacity="0.4"/>
+  
+  <!-- Side towers -->
+  <path d="M500,420 L540,420 L540,350 L520,330 L500,350 Z" fill="#000" opacity="0.4"/>
+  <path d="M660,420 L700,420 L700,350 L680,330 L660,350 Z" fill="#000" opacity="0.4"/>
+</svg>
