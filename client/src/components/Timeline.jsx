@@ -42,11 +42,12 @@ const Timeline = () => {
       id="timeline"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(245,245,245,0.15), rgba(245,245,245,0.15)), url('/public/timeline.jpg')",
+          "linear-gradient(rgba(245,245,245,0.15), rgba(245,245,245,0.15)), url('/timeline.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#6E1E1E]/80 via-[#C9A333]/80 to-[#6E1E1E]/80"></div>
       <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -83,7 +84,7 @@ const Timeline = () => {
                     index % 2 === 0 ? "md:pr-8 text-right" : "md:pl-8"
                   }`}
                 >
-                  <div className="bg-white/40 backdrop-blur-2xl p-4 rounded-lg shadow-lg relative border-x-4 border-[#6E1E1E]">
+                  <div className="bg-white/40 backdrop-blur-2xl p-4 rounded-3xl shadow-lg relative border-x-4 border-[#6E1E1E]">
                     <div className="font-semibold text-sm mb-1 text-[#231d00]">
                       {event.date}
                     </div>

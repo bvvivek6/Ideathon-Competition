@@ -41,7 +41,7 @@ const Organizers = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {organizers.map((organizer, index) => (
             <motion.div
               key={index}
@@ -49,9 +49,9 @@ const Organizers = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl overflow-hidden shadow-lg p-6 text-center border border-[#C9A333]/30"
+              className="bg-white rounded-xl overflow-hidden p-4 text-center"
             >
-              <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden border-4 border-[#C9A333]">
+              <div className="w-28 h-28 rounded-full mx-auto mb-4 overflow-hidden border-4 border-[#C9A333]">
                 <img
                   src={organizer.image}
                   alt={organizer.name}

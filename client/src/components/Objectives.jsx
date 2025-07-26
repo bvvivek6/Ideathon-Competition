@@ -30,10 +30,27 @@ const Objectives = () => {
   ];
 
   return (
-    <section className="section relative bg-[#f8f6f4] " id="objectives">
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#6E1E1E]/80 via-[#C9A333]/80 to-[#6E1E1E]/80"></div>
-      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#6E1E1E]/80 via-[#C9A333]/80 to-[#6E1E1E]/80"></div>
-
+    <section className="section relative bg-white " id="objectives">
+      <div className="absolute inset-0 opacity-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <pattern
+              id="themePattern"
+              width="60"
+              height="60"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M30,5 L55,30 L30,55 L5,30 Z"
+                fill="none"
+                stroke="#6E1E1E"
+                strokeWidth="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#themePattern)" />
+        </svg>
+      </div>{" "}
       <div className="container-custom py-10 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

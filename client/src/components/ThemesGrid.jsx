@@ -14,7 +14,7 @@ const ThemesGrid = () => {
     },
     {
       icon: "♻️",
-      title: "Clean Mysuru",
+      title: "Clean Mysuru, Green Mysuru",
       description: "Waste management and pollution reduction initiatives",
       color: "#50C878",
       bgLight: "#E6F5ED",
@@ -60,7 +60,8 @@ const ThemesGrid = () => {
   };
 
   return (
-    <section className="section relative bg-[#f5f5f5]" id="themes">
+    <section className="section relative  bg-white" id="themes">
+      <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-[#6E1E1E]/80 via-[#C9A333]/80 to-[#6E1E1E]/80"></div>
       <div className="absolute inset-0 opacity-5">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <defs>
@@ -99,7 +100,7 @@ const ThemesGrid = () => {
         </motion.div>
 
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-2"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-2 w-full py-2"
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
@@ -108,44 +109,27 @@ const ThemesGrid = () => {
           {themes.map((theme, index) => (
             <motion.div
               key={index}
-              className="rounded-xl overflow-hidden shadow-lg transform transition-all hover:shadow-xl relative h-64"
+              className="relative flex flex-col group bg-white/90 rounded-2xl shadow-xl tracking-tighter border border-[#f3e6c0] p-4 md:p-6 backdrop-blur-sm  transition-transform"
               variants={cardVariants}
-              whileHover={{
-                scale: 1.02,
-                boxShadow:
-                  "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
-              }}
+              whileHover={{ scale: 1.03 }}
             >
-              <div
-                className="absolute inset-0 z-0"
-                style={{
-                  backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.7)), url(${theme.bgImage})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  borderTop: `4px solid ${theme.color}`,
-                }}
-              />
-
-              <div className="p-6 md:p-8 relative z-10 h-full flex flex-col justify-between">
-                <div>
-                  <div className="flex items-center mb-4">
-                    <h3
-                      className="text-xl md:text-2xl font-bold"
-                      style={{
-                        color: "white",
-                      }}
-                    >
-                      {theme.title}
-                    </h3>
-                  </div>
-                </div>
-
-                <p
-                  className="text-white text-lg"
-                  style={{ textShadow: "0 1px 2px rgba(0,0,0,0.8)" }}
+              <div className="flex items-center gap-2 mb-4">
+                <h3
+                  className="text-2xl md:text-3xl font-medium text-[#6E1E1E] tracking-tight"
+                  style={{ color: theme.color }}
                 >
-                  {theme.description}
-                </p>
+                  {theme.title}
+                </h3>
+              </div>
+              <p className="text-[#3d2c1e] text-sm md:text-md font-medium mb-2">
+                {theme.description}
+              </p>
+              <div className="w-full h-32 md:h-40 rounded-xl overflow-hidden mt-2 shadow-md border-2 border-[#C9A333]/30">
+                <img
+                  src={theme.bgImage}
+                  alt={theme.title}
+                  className="w-full h-full object-cover object-center"
+                />
               </div>
             </motion.div>
           ))}

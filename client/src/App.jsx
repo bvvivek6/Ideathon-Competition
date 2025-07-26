@@ -21,20 +21,19 @@ const App = () => {
   };
 
   return (
-    <div className="min-h-screen dm-sans tracking-tight flex flex-col">
+    <div className="min-h-screen  dm-sans tracking-tight flex flex-col">
       <Navbar />
       <HeroSection scrollToForm={scrollToForm} />
-      <AboutSection />
       <AboutIdeathon />
       <Objectives />
       <ThemesGrid />
       <Timeline />
       <Prizes />
-      <Organizers />
+      {/* <Organizers /> */}
       <div ref={formRef}>
         <SubmissionForm />
       </div>
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

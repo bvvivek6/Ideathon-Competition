@@ -4,6 +4,28 @@ import { motion } from "framer-motion";
 const AboutIdeathon = () => {
   return (
     <section className="section relative bg-white" id="about-ideathon">
+      \
+      <div className="absolute inset-0 opacity-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <pattern
+              id="themePattern"
+              width="60"
+              height="60"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M30,5 L55,30 L30,55 L5,30 Z"
+                fill="none"
+                stroke="#6E1E1E"
+                strokeWidth="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#themePattern)" />
+        </svg>
+      </div>
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#6E1E1E]/80 via-[#C9A333]/80 to-[#6E1E1E]/80"></div>
       <div className="container-custom relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <motion.div
@@ -34,11 +56,6 @@ const AboutIdeathon = () => {
                 of Parliament, Mysuru & Kodagu, in collaboration with local
                 government bodies and civic organizations to ensure that
                 citizens have a direct voice in urban development.
-              </p>
-              <p>
-                Selected ideas will receive funding, implementation support, and
-                recognition, with the potential to transform Mysuru into a model
-                city that balances tradition with innovation.
               </p>
             </div>
           </motion.div>

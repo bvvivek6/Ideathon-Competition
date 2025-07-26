@@ -43,10 +43,27 @@ const SubmissionForm = () => {
     "w-full p-3 bg-white border border-gray-300 rounded-lg focus:outline-none focus:border-mysuru-gold focus:ring-1 focus:ring-mysuru-gold transition-colors";
 
   return (
-    <section
-      className="section relative bg-gradient-to-br from-mysuru-maroon/5 to-mysuru-gold/5"
-      id="submit"
-    >
+    <section className="section relative bg-white" id="submit">
+      <div className="absolute inset-0 opacity-5">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+          <defs>
+            <pattern
+              id="themePattern"
+              width="60"
+              height="60"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M30,5 L55,30 L30,55 L5,30 Z"
+                fill="none"
+                stroke="#6E1E1E"
+                strokeWidth="1"
+              />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#themePattern)" />
+        </svg>
+      </div>
       <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -101,7 +118,7 @@ const SubmissionForm = () => {
           <motion.form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="bg-white rounded-xl shadow-lg p-6 md:p-8"
+            className="bg-white border border-gray-300 rounded-xl shadow-lg p-6 md:p-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}

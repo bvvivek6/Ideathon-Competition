@@ -7,6 +7,9 @@ body {
   color: #333333;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 .btn-primary {
   background-color: #c9a333;
   color: white;
