@@ -3,11 +3,14 @@ import { motion } from "framer-motion";
 
 const HeroSection = ({ scrollToForm }) => {
   return (
-    <section
+    <motion.section
       className="relative h-screen flex items-center overflow-hidden bg-cover bg-center"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(110, 30, 30, 0.8)), url('/palace.jpg')`,
       }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
     >
       <div className="container-custom relative z-10 mb-10 md:mb-0 flex flex-col md:flex-row items-center justify-center w-full h-full">
         <div className="flex-1 flex leading-tight flex-col justify-center items-start text-center md:text-left md:pr-12 md:pl-4 py-6 md:py-0 w-full">
@@ -18,7 +21,9 @@ const HeroSection = ({ scrollToForm }) => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-semibold text-white mb-4 leading-tight drop-shadow-lg">
-              MyMysuru 2030 Ideathon<span className="align-middle">💡</span>
+              MyMysuru <i className="text-[#C9A333] ">2030 </i>
+              Ideathon
+              <span className="align-middle">💡</span>
             </h1>
             <div className="md:hidden w-full flex flex-col items-center justify-center mb-10">
               <motion.img
@@ -39,7 +44,7 @@ const HeroSection = ({ scrollToForm }) => {
               />
             </div>
             <h2 className="text-md md:text-2xl leading-tight font-semibold mb-2 text-[#e6b420] ">
-              Submit Your Idea to Shape Our City's Future
+              Ideas For Future Vision!
             </h2>
 
             <p className="text-base md:text-xl mb-8 text-white/90 drop-shadow-md font-medium">
@@ -77,7 +82,7 @@ const HeroSection = ({ scrollToForm }) => {
           />
         </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

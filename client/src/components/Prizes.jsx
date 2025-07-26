@@ -64,9 +64,10 @@ const Prizes = () => {
         viewport={{ once: true, amount: 0.2 }}
         className="text-center mb-16"
       >
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+        <h2 className="text-4xl md:text-5xl font-medium text-[#6E1E1E]">
           🏆 Grand Prizes
         </h2>
+        <div className="w-16 md:w-24 h-1 mb-6 bg-[#C9A333] mx-auto rounded-full"></div>
         <p className="text-lg md:text-xl text-gray-600 mt-4 max-w-xl mx-auto">
           Recognizing the brightest ideas that can shape a better Mysuru.
         </p>

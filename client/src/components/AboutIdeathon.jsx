@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 const AboutIdeathon = () => {
   return (
     <section className="section relative bg-white" id="about-ideathon">
-      \
       <div className="absolute inset-0 opacity-5">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <defs>
@@ -69,7 +68,7 @@ const AboutIdeathon = () => {
           >
             <div className="rounded-xl overflow-hidden shadow-xl relative z-10 border-4 border-white">
               <img
-                src="/public/image.png"
+                src="/image.png"
                 alt="Mysuru Palace"
                 className="w-[40rem] h-[30rem] object-cover"
               />

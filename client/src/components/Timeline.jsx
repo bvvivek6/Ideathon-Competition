@@ -56,7 +56,10 @@ const Timeline = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-left md:text-center leading-tight mb-12"
         >
-          <h2 className="text-4xl md:text-5xl mb-1">Timeline</h2>
+          <h2 className="text-4xl md:text-5xl mb-1 text-[#6E1E1E] font-medium">
+            Timeline
+          </h2>
+          <div className="w-16 md:w-24 h-1 mb-6 bg-[#C9A333] mx-auto rounded-full"></div>
           <p className="text-md md:text-xl max-w-3xl mx-auto">
             Key dates and milestones for the MyMysuru 2030 Ideathon
           </p>

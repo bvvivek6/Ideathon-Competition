@@ -91,7 +91,10 @@ const ThemesGrid = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-left md:text-center mb-10"
         >
-          <h2 className="text-4xl md:text-5xl">Ideathon Themes</h2>
+          <h2 className="text-4xl md:text-5xl text-[#6E1E1E] font-medium">
+            Ideathon Themes
+          </h2>
+          <div className="w-16 md:w-24 h-1 mb-6 bg-[#C9A333] mx-auto rounded-full"></div>
           <div className="w-20 h-1 bg-mysuru-gold mx-auto "></div>
           <p className="text-md md:text-xl mx-auto">
             Focus your innovative ideas on these key areas to create meaningful
@@ -109,7 +112,7 @@ const ThemesGrid = () => {
           {themes.map((theme, index) => (
             <motion.div
               key={index}
-              className="relative flex flex-col group bg-white/90 rounded-2xl shadow-xl tracking-tighter border border-[#f3e6c0] p-4 md:p-6 backdrop-blur-sm  transition-transform"
+              className="relative flex flex-col cursor-pointer group bg-white/90 rounded-2xl shadow-xl tracking-tighter border border-[#f3e6c0] p-4 md:p-6 backdrop-blur-sm  transition-transform"
               variants={cardVariants}
               whileHover={{ scale: 1.03 }}
             >

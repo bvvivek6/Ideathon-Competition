@@ -29,7 +29,6 @@ const App = () => {
       <ThemesGrid />
       <Timeline />
       <Prizes />
-      {/* <Organizers /> */}
       <div ref={formRef}>
         <SubmissionForm />
       </div>

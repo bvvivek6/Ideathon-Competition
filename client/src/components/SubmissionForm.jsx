@@ -72,7 +72,9 @@ const SubmissionForm = () => {
           viewport={{ once: true, amount: 0.2 }}
           className="text-left md:text-center mb-10"
         >
-          <h2 className="text-4xl md:text-5xl ">Submit Your Idea</h2>
+          <h2 className="text-4xl md:text-5xl text-[#6E1E1E] font-medium">
+            Submit Your Idea
+          </h2>
           <div className="w-24 h-1 bg-mysuru-gold mx-auto "></div>
           <p className="text-md md:text-xl max-w-3xl mx-auto">
             Share your innovative solution to help shape the future of Mysuru
